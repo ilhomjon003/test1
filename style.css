@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+svg{
+    width: 600px;
+}
+
+.moon{
+    animation: moonMove 10s linear infinite;
+}
+.rocket{
+    animation: rocket 5s linear infinite;
+}
+@keyframes moonMove{
+    0%{
+        transform: translateX(0) translateY(0) scale(1);
+    }
+    100%
+    {
+        transform: translateX(600px) translateY(150px) scale(0.4);
+    }
+}
+@keyframes rocket{
+    0%{
+        transform: translateX(0) translateY(0);
+    }
+    100%
+    {
+        transform: translateX(-240px) translateY(-300px);
+    }
+}
